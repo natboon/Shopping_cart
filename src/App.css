@@ -14,8 +14,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #5a719e;
+  min-height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,6 +27,99 @@
 .App-link {
   color: #61dafb;
 }
+
+.items-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+}
+
+.items-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+  display: flex;
+  padding: 4px 5px;
+  margin: 10px 5px;
+  background-color: #7dafa7;
+  border-radius: 12px;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(209, 114, 114, 0.75);
+  border-radius: 20%;
+  width: 50px;
+  height: 50px;  
+  font-weight: 800;
+  font-size: 25px;
+  color: aliceblue;
+}
+
+.Actionsbutton {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.inputval {
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0.5rem 0.25rem;
+  border-radius: 8px;
+  font-weight: 700;
+  color: aliceblue;
+  font-size: 18px;
+  box-shadow: 0px 0px 10px 2px rgba(10, 9, 9, 0.5) inset;
+  background: none;
+}
+
+.total-items {
+  border-radius: 12px;
+  text-shadow: 0px 2px 5px rgba(255,255,255,0.5);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #7dafa7;
+  justify-content: center;
+  height: 30%;
+}
+
+.total {
+  display: flex;
+  font-weight: 500;
+  color: rgb(212, 212, 129);
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.resetbutton {
+  color: white;
+  background-color: rgba(209, 114, 114, 0.75);
+  padding: 0.75rem 0.5rem;
+  border-radius: 12px;
+  transition: ease 0.25s all;
+  cursor: pointer;
+}
+
+.resetbutton:hover {
+  font-weight: 600;
+  scale: 1.15;
+  background-color: rgba(171, 2, 2, 0.76);
+
+}
+
 
 @keyframes App-logo-spin {
   from {
